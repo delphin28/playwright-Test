@@ -1,0 +1,8 @@
+
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Playwright test results
+playwright-report/
+tests-results/

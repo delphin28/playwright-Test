@@ -1,0 +1,19 @@
+//create a workflow file for ci to run tests^
+
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+runs-on: ubuntu-latest
+steps:
+  playwright:
+    name: Run Playwright Tests
+    uses: actions/setup-node@v3
+    with:
+      node-version: '16'
+    run: |
+      npm install
+      npx playwright install
+      npx playwright test
