@@ -1,4 +1,3 @@
-//create a workflow file for ci to run tests^
 
 name: CI
 on:
